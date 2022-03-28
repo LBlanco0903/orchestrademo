@@ -1,0 +1,314 @@
+/* Navbar */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: #1b1a1b;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.logo {
+  width: 10%;
+}
+
+header img {
+  max-width: 80%;
+  height: auto;
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header #menu {
+  transition: height ease-in-out 0.5s;
+}
+
+header #menu ul {
+  list-style-type: none;
+  text-align: end;
+}
+
+header #menu ul li {
+  display: inline-block;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+header #menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header #menu a:hover {
+  color: #bea155;
+}
+
+header #menu ul li:last-child {
+  padding-right: 0;
+}
+
+header .menu--toggle {
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 130px;
+  border: none;
+  display: none;
+}
+.menu--toggle i {
+  color: #fff;
+}
+
+.show {
+  height: 100px !important;
+}
+
+/* Menu */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+.container {
+  background-color: #292929;
+  height: 170px;
+  width: 100%;
+  padding: 0 40px;
+  transition: height ease-in-out 0.5s;
+}
+
+.choose-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose-title i {
+  color: #fff;
+  padding-top: 15px;
+  display: none;
+}
+h4 {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+ul {
+  list-style: none;
+}
+
+.items {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  list-style: none;
+  color: #ffffff;
+}
+
+.items--little {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.items--big {
+  cursor: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* .items--big:hover {
+  color: #3b7381;
+} */
+
+.items--little:hover {
+  color: #ffffff;
+  background-color: #3b7280;
+  padding: 0 2px;
+}
+
+.lista {
+  display: flex;
+  display: inline-block;
+}
+
+.menu li {
+  padding-top: 3px;
+}
+
+.show__menu {
+  height: 800px !important;
+}
+
+iframe {
+  display: block;
+  height: 800px;
+  border: none;
+}
+
+footer {
+  display: flex;
+  padding: 10px 40px;
+  width: 100%;
+  height: 7%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #999999;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #191919;
+}
+
+footer p {
+  display: inline-block;
+}
+
+.icons {
+  display: inline-block;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  /*Menú*/
+  .container {
+    height: 40px;
+    overflow: hidden;
+  }
+  .choose-title {
+    line-height: 40px;
+  }
+  .choose-title i {
+    color: #fff;
+    display: inline;
+    cursor: pointer;
+  }
+  h4 {
+    padding: 0;
+  }
+  .menu {
+    display: block;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    height: 0;
+  }
+
+  #menu li {
+    text-align: center;
+  }
+
+  .items--big {
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 10px 22px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  header .menu--toggle {
+    position: relative;
+    display: block;
+    text-align: end;
+    right: 0;
+  }
+  header #menu {
+    background-color: #191919;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  header #menu ul {
+    padding: 0;
+    margin: 0 auto;
+  }
+  header #menu ul li {
+    display: block;
+    font-size: 20px;
+
+    padding: 10px 0;
+    border-bottom: 1px solid #0d183e;
+  }
+  header #menu ul li a {
+    color: #fff;
+  }
+
+  /*Menu*/
+  .container {
+    padding: 0 22px;
+  }
+
+  /*Footer*/
+  footer {
+    display: block;
+    padding: 30px 22px;
+    height: 100px;
+    text-align: center;
+  }
+
+  footer p {
+    display: inline-block;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  .tableau {
+    margin: 40px auto;
+
+    border: solid 2px #dfdfdf;
+    border-radius: 5px;
+
+    height: 80%;
+    width: 95vw;
+  }
+}
+
+.tableauPlaceholder {
+  margin: 20px auto;
+}
