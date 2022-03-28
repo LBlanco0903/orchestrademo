@@ -1,0 +1,385 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      rel="stylesheet"
+    />
+    <link href="./Style.css" rel="stylesheet" />
+    <title>Orchestra</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="https://orchestra.global"
+        ><img alt="logo" src="./Name_White.png" />
+      </a>
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="https://orchestra.global/manifesto/"
+              >Manifesto</a
+            >
+          </li>
+          <li>
+            <a href="https://orchestra.global/portfolio/"
+              >Portfolio</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu--toggle"></div>
+    </header>
+    <!-- Menu -->
+
+    <div class="container">
+      <div class="choose-title">
+        <h4 class="choose">CHOOSE AN INDICATOR</h4>
+        <i class="fas fa-angle-down"></i>
+      </div>
+
+      <div class="menu">
+        <!-- 8 -->
+        <ul>
+          <li>
+            <h1 class="items items--big">Economic Activity</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(0)"
+            >
+              GDP
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(1)"
+            >
+              IGAE
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(2)"
+            >
+              ITAEE
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(3)"
+            >
+              IMAIEF
+            </button>
+          </li>
+        </ul>
+        <!-- 4 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">Public Healthcare</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(4)"
+              title="Rate of medics per 1k people."
+            >
+              Doctors
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(5)"
+              title="Rate of nurses per 1k people."
+            >
+              Nurses
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(6)"
+              title="Rate of hospital beds per 1k people."
+            >
+              Hospital beds
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(7)"
+              title="Rate of people with full access to a health service (public or private)."
+            >
+              Health coverage
+            </button>
+          </li>
+        </ul>
+        <!-- 1 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">Employment</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(8)"
+              title="Number of citizens with formal participation in the country's labour force."
+            >
+              Formal
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(9)"
+              title="Number of citizens with informal participation in the country's labour force."
+            >
+              Informal
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(10)"
+              title="Number of unoccupied citizens and unemployment rate 
+    of Economically Active Population."
+            >
+              Unemployment
+            </button>
+          </li>
+        </ul>
+        <!-- 2 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">Education</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(11)"
+              title="Number of students enrolled and graduated from STEM careers."
+            >
+              STEM
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(12)"
+              title="Number of researchers."
+            >
+              Researchers
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              data-bs-placement="bottom"
+              data-bs-toggle="tooltip"
+              onclick="graph(13)"
+              title="Average years of school, beggining with primary education."
+            >
+              Years of schooling
+            </button>
+          </li>
+        </ul>
+        <!-- 3 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">Debt</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(14)"
+            >
+              Debt
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(15)"
+            >
+              Market Cap.
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(16)"
+            >
+              Financial Access
+            </button>
+          </li>
+        </ul>
+        <!-- 7 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">
+              International cooperation
+            </h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(17)"
+            >
+              Insecurity
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(18)"
+            >
+              Internet Access
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(19)"
+            >
+              Business Confidence
+            </button>
+          </li>
+        </ul>
+        <!-- 5 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">Balance of Trade</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(20)"
+            >
+              Net exports
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(21)"
+            >
+              Goods and Services Trade
+            </button>
+          </li>
+        </ul>
+        <!-- 6 -->
+
+        <ul>
+          <li>
+            <h1 class="items items--big">Foreign Investment</h1>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(22)"
+            >
+              Direct Investment
+            </button>
+          </li>
+          <li>
+            <button
+              class="items items--little"
+              onclick="graph(23)"
+            >
+              Portfolio Investment
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Frame del grafico -->
+    <script
+      type="text/javascript"
+      src="https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js"
+    ></script>
+    <div
+      class="tableauPlaceholder"
+      style="width: 1000px; height: 727px"
+    >
+      <object
+        class="tableauViz"
+        width="1000"
+        height="727"
+        style="display: none"
+      >
+        <param
+          name="host_url"
+          value="https%3A%2F%2Fprod-useast-b.online.tableau.com%2F"
+        />
+        <param name="embed_code_version" value="3" />
+        <param
+          name="site_root"
+          value="&#47;t&#47;orchestradataanalytics"
+        />
+        <param name="name" value="Mdicos2_0&#47;Mdicos" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="device" value="desktop" />
+        <param name="display_count" value="n" />
+        <param name="origin" value="viz_share_link" />
+        <param name="showAppBanner" value="false" />
+      </object>
+    </div>
+
+    <footer id="footer">
+      <div class="icons">
+        <img
+          class="icon"
+          src="https://img.icons8.com/ios-filled/25/BEA155/linkedin.png"
+        />
+        <img
+          class="icon"
+          src="https://img.icons8.com/ios-filled/25/BEA155/facebook--v1.png"
+        />
+        <img
+          class="icon"
+          src="https://img.icons8.com/ios-filled/25/BEA155/twitter.png"
+        />
+      </div>
+
+      <p>Arango, &amp; the O Team. (2021)</p>
+    </footer>
+    <script src="./Script.js"></script>
+  </body>
+</html>
